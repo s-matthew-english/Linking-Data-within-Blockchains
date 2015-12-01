@@ -1,0 +1,204 @@
+
+%%%%%%%%%%%%%%%%%%%%%%% file typeinst.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is the LaTeX source for the instructions to authors using
+% the LaTeX document class 'llncs.cls' for contributions to
+% the Lecture Notes in Computer Sciences series.
+% http://www.springer.com/lncs       Springer Heidelberg 2006/05/04
+%
+% It may be used as a template for your own input - copy it
+% to a new file with a new name and use it as the basis
+% for your article.
+%
+% NB: the document class 'llncs' has its own and detailed documentation, see
+% ftp://ftp.springer.de/data/pubftp/pub/tex/latex/llncs/latex2e/llncsdoc.pdf
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%
+
+% Possible Sections
+
+%
+
+% --> Brief Intro
+
+% --> Namecoin / Cool URIs
+
+% --> Supplychain
+
+% --> Standardization
+
+% --> No Panecea
+
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                     %
+%                      ESWC2016                       %
+%                                                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                     %
+%   Research and In-Use Tracks (23:59 Hawaii time):   %
+%   Compulsory abstract submission for all papers:    %
+%                                                     %
+%          December 11, 2015 (sharp)                  %
+%                                                     %
+%       Compulsory full paper submission:             %
+%                                                     %
+%             December 18, 2015 (sharp)               %
+%                                                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[runningheads,a4paper]{llncs}
+
+\usepackage{amssymb}
+\setcounter{tocdepth}{3}
+\usepackage{graphicx}
+
+\usepackage{url}
+%\urldef{\mailsa}\path|{auer|english}@cs.uni-bonn.de|
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\keywordname\enspace\ignorespaces#1}
+
+\begin{document}
+
+\mainmatter  % start of an individual contribution
+
+% first the title is needed
+\title{Linking Data within Blockchains and Smart Contracts}
+
+% a short form should be given in case it is too long for the running head
+\titlerunning{Linking Data within Blockchains and Smart Contracts}
+
+
+\author{Matthew English \and S\"oren Auer}
+%
+\authorrunning{English et al.}
+% (feature abused for this document to repeat the title also on left hand pages)
+
+% the affiliations are given next; don't give your e-mail address
+% unless you accept that it will be published
+\institute{EIS, Computer Science, University of Bonn, Germany\\
+\mailsa\\
+\url{http://eis.iai.uni-bonn.de}}
+
+
+\toctitle{Lecture Notes in Computer Science}
+\tocauthor{Authors' Instructions}
+\maketitle
+
+
+\begin{abstract}
+The concept of peer-to-peer applications is not new, nor is the concept of distributed hash tables. What emerged in 2009 with the publication of the "bitcoin white paper" was an incentive structure that unified these two software paradigms with a set of economic incentives that motivated the creation of a dedicated computing network orders of magnitude more powerful than the world's fastest supercomputers. The purpose of which is the maintainance of a massive distributed database known as the bitcoin "blockchain". Apart from the digital currency it enables, the blockchain is a fascinating new paradigm in the world of computing and has a wide range of implication for the realization of many of the aspirations of the semantic web community. In this paper we seek to explore the ways in which blockchain technology might be utilized in relation to the establishment of a more robust linked open data ecosystem. 
+
+
+
+
+% With the rise of the Bitcoin crypto-currency the concept of distributed blockchain databases received wider attention.
+% Based on the distributed blockchain infrastructure a wide range of distributed applications can be built.
+% The most recent and innovative approach in that regard is Etherum platform, which includes a Turing-complete programming framework aiming to realize smart contracts.
+% Similarly as blockchain technology can facilitate distributed currency, trust and contracts application, Linked Data facilitated distributed data management without central authorities.
+% In this article, we investigate how the blockchain and Linked Data concepts can be fruitfully combined to realize novel applications.
+\keywords{Blockchain, Smart Contracts, Linked Data}
+\end{abstract}
+
+
+\section{Introduction}
+
+Cyptographic hash tables in the form of merkyl trees, viz, blockchain, as popularized by the Bitcoin standard have been garnering significant attention in popular culture but to date have not been thoroughly examined in the context of the utility of its application to distributed semantic technologies. 
+
+
+
+
+
+\cite{harthscripting}
+
+\section{Smart Contracts}
+
+Satoshi Nakamoto the author of the original bitcoin white paper included the possibility that transactions more complex than the simple transference of a bitcoin hash could be processed by the blockchain. As originally envisioned these ``smart contracts", as they were dubbed, would be able to execute such operations as simple escrow services, e.g. a bitcoin that could be transmitted only upon receiving an input, viz. signature, from two distinct public key holders.
+
+With the growth of the network this facility has been expanded to take on evermore complex tasks. One such task has been the disassociation with URL/URI assignment from the traditional, highly centralized DNS model, to a distributed blockchain based model. 
+
+\section{Namecoins}
+
+One of the realizations of this is by means of Namecoin. 
+
+\subsection{Cool URIs}
+
+The W3C document Cool URIs for the Semantic Web
+
+http://www.w3.org/TR/cooluris/
+
+Set's forth a number of optimal conditions for the naming of resource on the semantic web. Foremost among these criteria is the concept of persistance. 
+
+The current system of DNS has proved relatively stable but- take for instance- Freebase- one of the most promising efforts of the semantic web, 2014, has effectively been obselated by a private third party. 
+
+Such a system does not square with such efforts as Tom Mitchells NELL system which aims to stay operational indefinetly. 
+
+The idea behind namecoins to be remove the ability to bestow named from the centralized structues of traditional DNS and distributes this capacity to the democratic procesing mechanism of the bitcoin blockchain network. 
+
+
+
+
+\section{Standardization}
+
+Gavin Andressen, the principal maintainer of the bitcoin code and the *head* of the bitcoin foundation has stated as recently as November 30, 2015 that one of the most significant hurdles toward the buildout of the core bitcoin code is the lack of standardization. 
+
+What is called for is a shared vocabulary, this could take the form of an ontology and in fact efforts are underway in this direction, we look to the work of Martin as an initial instatiation of this, which this is doubtless a critical first step it is certain that further work and ongoing maintainance of this task will be a priority to all engineers and scientists active in the development of blockchain associative technologies. 
+
+
+\section{Background Blockchain and Smart Contracts}
+
+The concept of the blockchain satisfies one of the classic problems in computer science known as the byzantine generals problem. The solution was put forward by Nancy Lynch in 2007 for which she was awarded the Knuth prize. 
+
+
+\section{Representing Blockchains as RDF}
+
+\url{https://cc.rww.io/vocab}
+
+\section{Representing RDF within the Blockchain}
+
+\section{Application Scenarios}
+
+\subsection{Standardization of Bitcoin}
+
+Creation of an ontology to specify what we mean when we are talking about bitcoin. If bitcoin is going to really take off then it's code, the core component repository, will have to be very well documented and understood by a large number of developers. 
+
+\subsection{Naming of Resources}
+
+Important in the RDF data model is naming resources. Currently go through DNS. Namecoin is the second most popular alt coin, cryptocurrency other than Bitcoin, they provide a distributed and persistant naming scheme. 
+
+Merge mined with Bitcoin. 
+
+\subsection{Establishing Trust in Supply Chains}
+
+Supplychain and Industry 4.0. ODI start-up
+
+Semantic blockchains in the supply chain
+\url{http://www.cbrewster.com/docs/talks/20150617_TNO.pdf}
+
+\subsection{Ensuring Provenance using Blockchains}
+
+Including a hash of documents into the block chain. 
+
+\subsection{IPFS}
+
+Combatting dead links in cited resoucres such as the supreme court decisions. 
+
+\section{Discussion}
+
+The letter of the law vs the spirit of the law. The percise wordin of contracts is not alway infalable- this is why we need human artibeurs in some cases. That being said, in our modern age most of the online transactions we perform are the result of contracts being successfully concluded between disparate machines and their corresponding databases. 
+
+\section{Conclusions and Future Work}
+
+Implementing something about Ethereum and linked data. 
+
+Something to do with DBpedia URI and Namecoin. 
+
+
+\bibliographystyle{splncs03}
+\bibliography{paper}
+
+\end{document}
